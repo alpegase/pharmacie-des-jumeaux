@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Inscription - La Pharmacie des Jumeaux</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="images/logo.png" alt="Logo" class="logo">
+        <div class="brand-text"><h1>Pharmacie des Jumeaux</h1></div>
+      </div>
+      <nav><a href="pharmaciedesjumeaux.html" class="btn outline">Retour</a></nav>
+    </div>
+  </header>
+
+  <main class="container small-section">
+    <h2>Inscription / Connexion</h2>
+    <div class="auth-grid">
+      <div class="auth-card">
+        <h3>Inscription classique</h3>
+        <form id="registerForm">
+          <label>Nom<input name="fullname" required></label>
+          <label>Email<input name="email" type="email" required></label>
+          <label>Mot de passe<input name="password" type="password" required></label>
+          <div class="form-actions">
+            <button class="btn primary" type="submit">S'inscrire</button>
+            <button type="button" id="exportUsers" class="btn outline">Exporter utilisateurs</button>
+          </div>
+        </form>
+        <p class="muted">Les données sont actuellement stockées localement pour tests. Tu peux exporter le fichier JSON pour l'utiliser ailleurs.</p>
+      </div>
+
+      <div class="auth-card">
+        <h3>Connexion classique</h3>
+        <form id="loginForm">
+          <label>Email<input name="email" type="email" required></label>
+          <label>Mot de passe<input name="password" type="password" required></label>
+          <div class="form-actions">
+            <button class="btn primary" type="submit">Se connecter</button>
+          </div>
+        </form>
+
+        <div class="divider">OU</div>
+
+        <h3>Se connecter avec</h3>
+        <div class="social-btns">
+          <button id="googleBtn" class="btn google">Se connecter avec Google</button>
+          <button id="facebookBtn" class="btn facebook">Se connecter avec Facebook</button>
+        </div>
+        <p class="muted">Les boutons redirigent vers les pages d'autorisation officielles (Google / Facebook).</p>
+      </div>
+    </div>
+
+    <div id="authAlert" class="auth-alert" role="status" aria-live="polite" style="display:none"></div>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

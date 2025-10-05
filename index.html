@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>La Pharmacie des Jumeaux</title>
+  <meta name="description" content="Pharmacie des Jumeaux — vos pharmaciens de confiance. Horaires, services, et contact WhatsApp rapide." />
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="images/logo.png" alt="Logo La Pharmacie des Jumeaux" class="logo">
+        <div class="brand-text">
+          <h1>La Pharmacie<br><span>des Jumeaux</span></h1>
+        </div>
+      </div>
+
+      <nav class="main-nav" aria-label="Navigation principale">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">☰</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="pharmaciedesjumeaux.html">Accueil</a></li>
+          <li><a href="inscription.html">Inscription</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="accueil" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h2>Votre santé, notre priorité</h2>
+          <p class="lead">Pharmacie de proximité — conseils, médicaments, et services personnalisés. Commande rapide via WhatsApp.</p>
+          <div class="cta-row">
+            <a class="btn primary" id="whatsappQuick" href="#">Contacter via WhatsApp</a>
+            <a class="btn outline" href="inscription.html">S'inscrire / Se connecter</a>
+          </div>
+          <ul class="highlights">
+            <li>Conseils pharmaceutiques personnalisés</li>
+            <li>Préparations et délivrances rapides</li>
+            <li>Vaccinations & bilans santé</li>
+          </ul>
+        </div>
+        <div class="hero-right">
+          <div class="card contact-card">
+            <h3>Horaires</h3>
+            <p><strong>Lundi - Vendredi :</strong> 8:30 — 19:00</p>
+            <p><strong>Samedi :</strong> 9:00 — 13:00</p>
+            <p><strong>Dimanche :</strong> Fermé</p>
+            <a class="btn" href="#contact">Voir contact</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="container services">
+      <h2>Nos services</h2>
+      <div class="services-grid">
+        <article class="service">
+          <h3>Conseils personnalisés</h3>
+          <p>Nos pharmaciens vous accompagnent pour l'utilisation des traitements et posologie.</p>
+        </article>
+        <article class="service">
+          <h3>Préparations magistrales</h3>
+          <p>Formulations sur mesure pour patients avec besoins spécifiques.</p>
+        </article>
+        <article class="service">
+          <h3>Vaccination</h3>
+          <p>Vaccins saisonniers et conseils de prévention.</p>
+        </article>
+        <article class="service">
+          <h3>Livraison</h3>
+          <p>Livraison locale rapide — commande via WhatsApp.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="horaire" class="container small-section">
+      <h2>Pratique</h2>
+      <div class="info-row">
+        <div>
+          <h4>Adresse</h4>
+          <p>Rue Principale, 123 — Ville</p>
+        </div>
+        <div>
+          <h4>Téléphone</h4>
+          <p>+237 651 202 009</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container small-section contact-section">
+      <h2>Contactez-nous</h2>
+      <p>Utilisez le chat WhatsApp ou visitez-nous en pharmacie.</p>
+
+      <form id="contactForm" class="contact-form" novalidate>
+        <div class="row">
+          <label>
+            <span>Nom</span>
+            <input type="text" name="name" required placeholder="Votre nom">
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" placeholder="exemple@mail.com">
+          </label>
+        </div>
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="4" placeholder="Renseignez votre demande..." required></textarea>
+        </label>
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Envoyer (par WhatsApp)</button>
+          <button type="reset" class="btn outline">Effacer</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="socials">
+        <a href="https://www.facebook.com/PharmacieDesJumeaux" target="_blank" rel="noopener" aria-label="Facebook">
+          <img src="images/facebook.png" alt="Facebook" class="social-icon">
+        </a>
+        <a href="https://t.me/PharmacieDesJumeaux" target="_blank" rel="noopener" aria-label="Telegram">
+          <img src="images/telegram.png" alt="Telegram" class="social-icon">
+        </a>
+      </div>
+      <div class="copyright">
+        © <span id="currentYear"></span> La Pharmacie des Jumeaux — Tous droits réservés
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp bubble + mini-chat -->
+  <div id="whatsappBubble" class="whatsapp-bubble" aria-hidden="false" title="Contactez-nous sur WhatsApp">
+    <img src="images/whatsapp.png" alt="WhatsApp" class="wb-icon">
+  </div>
+
+  <div id="whatsappMini" class="whatsapp-mini" aria-hidden="true" role="dialog" aria-label="Chat WhatsApp">
+    <div class="mini-header">
+      <div class="mini-title">
+        <img src="images/logo.png" alt="" class="mini-logo">
+        <div>
+          <strong>Pharmacie des Jumeaux</strong>
+          <div class="status">Réponse rapide via WhatsApp</div>
+        </div>
+      </div>
+      <button id="miniClose" aria-label="Fermer la fenêtre de chat">✕</button>
+    </div>
+    <div class="mini-body" id="miniBody" role="log" aria-live="polite">
+      <div class="msg bot">Bonjour ! 👋 Tapez votre message et cliquez sur envoyer — nous répondrons via WhatsApp.</div>
+    </div>
+    <form id="miniForm" class="mini-form">
+      <input id="miniInput" type="text" placeholder="Écrire un message..." aria-label="Message" required>
+      <button type="submit" class="btn send">Envoyer</button>
+    </form>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
