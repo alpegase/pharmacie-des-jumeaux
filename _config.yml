@@ -1,0 +1,22 @@
+# Configuration GitHub Pages pour La Pharmacie des Jumeaux
+title: "La Pharmacie des Jumeaux"
+description: "Pharmacie de proximité — conseils, médicaments, et services personnalisés. Commande rapide via WhatsApp."
+baseurl: "" # Ne rien mettre ici, car c’est un site utilisateur
+url: "https://alpegase.github.io"
+
+# Aucune génération Jekyll (utile pour projets HTML/CSS/JS purs)
+plugins: []
+theme: null
+markdown: kramdown
+include:
+  - images
+  - style.css
+  - script.js
+  - inscription.html
+  - pharmaciedesjumeaux.html
+  - manifest.json
+  - sw.js
+
+# Infos supplémentaires
+author: "Pharmacie des Jumeaux"
+email: "contact@pharmaciedesjumeaux.cm"
